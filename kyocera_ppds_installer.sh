@@ -4,7 +4,7 @@ cat << EOF
 Kyosera PPD installer v.1.0.4
 
 This installer contains i386 and x86_64 linux drivers
-for Kyosera FS printers and multi-functional devices (English only).
+for Kyocera FS printers and multi-functional devices (English only).
 Included models:
 - Kyocera FS-1020MFP
 - Kyocera FS-1025MFP
@@ -2255,7 +2255,7 @@ cp ${PPD_SRC_PATH}/*.ppd /usr/share/cups/model/Kyocera
 BITS=$(getconf LONG_BIT)
 cp ${PPD_SRC_PATH}/rastertokpsl_$BITS /usr/lib/cups/filter/rastertokpsl-bin
 cp ${PPD_SRC_PATH}/rastertokpsl_wrapper /usr/lib/cups/filter/rastertokpsl
-echo Kyosera devices drivers are installed. You may use CUPS now.
+echo Kyocera devices drivers has been installed. You may use CUPS now.
 }
 
 if [ "$1" == "--uninstall" ]
